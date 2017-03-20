@@ -1,3 +1,11 @@
-<%= link_to "New Post", new_post_path %>
+<div class="container">
 
-<%= link_to "View all posts", posts_path %>
+	<%= link_to new_post_path do %>
+	<div class="box"><h2>New Post</h2></div>
+	<% end %>
+
+	<%= link_to posts_path do %>
+	<div class="box"><h2>View all posts</h2></div>
+	<% end %>
+
+</div>
